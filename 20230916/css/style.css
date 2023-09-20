@@ -1,34 +1,150 @@
 @charset "utf-8";
 
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+*, *::before, *::after {
+  /* 直感的なボックスサイズのモデルを使用 */
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #000;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
 ul {
-  display: flex;
-  justify-content: flex-start;
-  /* align-items: flex-start; */
+  /*左の「・」を消す*/
   list-style: none;
-  max-width: 960px;
-  margin: 0 auto;
 }
 
-ul li {
-  padding: 0 20px;
-  background-color: gray;
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
 }
 
+
+/* ここから課題 */
+
+/* work1.3 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  margin: 20px auto;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-item {
+  padding: 4px 32px;
+  border-right: 1px solid #000;
+}
+
+.nav-item:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+.nav-link {
+  font-size: 0.875rem;
+  transition: 0.1s;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+/* work2 */
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid #000;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 10px;
+  }
+}
+
+/* work1.1 */
 .wrap {
   display: flex;
   justify-content: space-between;
+  width: 960px;
+  margin: 50px auto;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+}
+
+/* work1.2 */
+.wrap-red {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1000px;
+  width: 960px;
   margin: 0 auto;
 }
 
-.wrap div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  width: 30%;
+.box-red {
+  width: 300px;
   height: 300px;
-  background-color: chocolate;
-  color: #fff;
+  background-color: red;
+  margin: 30px 0;
+}
+
+/* work2 */
+@media screen and (max-width: 767px) {
+  .wrap, .wrap-red {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .box, .box-red {
+    width: 30%;
+    height: 30vw;
+  }
 }
