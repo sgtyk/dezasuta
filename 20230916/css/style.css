@@ -54,7 +54,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 960px;
+  max-width: 960px;
   margin: 20px auto;
 }
 
@@ -85,7 +85,6 @@ img {
 @media screen and (max-width: 767px) {
   .header {
     display: block;
-    width: 100%;
     padding: 10px;
   }
 
@@ -110,7 +109,7 @@ img {
 .wrap {
   display: flex;
   justify-content: space-between;
-  width: 960px;
+  max-width: 960px;
   margin: 50px auto;
 }
 
@@ -125,7 +124,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -139,7 +138,6 @@ img {
 /* work2 */
 @media screen and (max-width: 767px) {
   .wrap, .wrap-red {
-    width: 100%;
     padding: 10px;
   }
 
