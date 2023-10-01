@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+*, *::before, *::after {
+  /* 直感的なボックスサイズのモデルを使用 */
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #000;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+
+/* ここから課題 */
+.section {
+  max-width: 960px;
+  margin: 40px auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #398072;
+  text-align: center;
+}
+
+.service {
+  background-color: #eee;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 40px auto 0;
+}
+
+.service-item {
+}
+
+.service-body {
+  padding: 12px;
+  background-color: #fff;
+}
+
+.service-title {
+  padding-left: 8px;
+  border-left: 6px solid #398072;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #398072;
+}
+
+.service-text {
+  margin-top: 8px;
+  line-height: 1.5;
+}
