@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+*, *::before, *::after {
+  /* 直感的なボックスサイズのモデルを使用 */
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-feature-settings: "palt";
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+
+/* ここから課題 */
+
+/* 変数 */
+:root {
+  --content-width: 1000px;
+  --content-padding-x: 10px;
+  --bg-color: #E8D9BF;
+  --base-color: #4F260B;
+  --accent-color: #D30202;
+}
+
+/* メインビジュアル */
+.hero {
+  position: relative;
+}
+
+.slider {
+}
+
+.slider-item {
+}
+
+.slider-img {
+}
+
+/* ヘッダー */
+.headear {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 7% 0 3%;
+}
+
+.header-logo {
+  width: 226px;
+  min-width: 188px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-link {
+  display: block;
+  width: 105px;
+  margin-left: 54px;
+  text-align: center;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-link {
+    width: auto;
+    max-width: 96px;
+    margin-left: 24px;
+  }
+}
+
+/* 共通要素 */
+.main {
+  padding-top: 98px;
+  background-color: var(--bg-color);
+  color: var(--base-color);
+}
+
+.content {
+  max-width: var(--content-width);
+  padding: 0 var(--content-padding-x);
+  box-sizing: content-box;
+}
+
+/* キャップコピー */
+.copy {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.copy-english {
+  font-size: 1.875rem;
+}
+
+.copy-message {
+  margin-top: 40px;
+  font-size: 5.125rem;
+  line-height: 1.17;
+  letter-spacing: 0.1em;
+}
+
+.copy-text {
+  max-width: 850px;
+  margin: 25px auto 0;
+  font-size: 1.4375rem;
+  line-height: 1.65;
+  letter-spacing: 0.1em;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 90px auto 0;
+}
+
+.about-img {
+  width: 50%;
+  border-bottom-right-radius: 82px;
+}
+
+.about-body {
+  padding-top: 56px;
+  margin-left: 9%;
+}
+
+.about-title {
+  width: 272px;
+}
+
+.about-message {
+  margin-top: 42px;
+  font-size: 2.75rem;
+  line-height: 1.39;
+}
+
+.about-text {
+  margin-top: 18px;
+  font-size: 1rem;
+  line-height: 1.625;
+}
+
+/* MENU */
+.menu {
+  margin: 95px auto 0;
+}
+
+.menu-title {
+  width: 151px;
+  margin: 0 auto;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+  margin: 40px auto 0;
+}
+
+.menu-img {
+  border-top-right-radius: 42px;
+}
+
+.menu-category {
+  margin: -20px 0 0 15px;
+  font-size: 2.375rem;
+  font-weight: normal;
+  color: var(--accent-color);
+}
+
+.menu-text {
+  margin-top: 4px;
+  font-size: 1.0625rem;
+  line-height: 1.47;
+}
+
+/* GALLERY */
+.gallery {
+  margin-top: 85px;
+}
+
+.gallery-title {
+  width: 245px;
+  margin: 0 auto;
+}
+
+.gallery-list {
+  display: flex;
+  margin-top: 16px;
+}
+
+/* EVENT */
+.event {
+  margin: 58px auto 0;
+}
+
+.event-title {
+  width: 174px;
+  margin: 0 auto;
+}
+
+.event-list {
+  margin: 32px auto 0;
+  padding: 34px 160px;
+  border: 4px solid var(--base-color);
+  background-color: #fff;
+  list-style: none;
+  font-size: 1.4375rem;
+}
+
+.event-item {
+  display: flex;
+}
+
+.event-item + .event-item {
+  margin-top: 10px;
+}
+
+.event-date {
+  display: block;
+}
+
+.event-text {
+  display: block;
+  margin-left: 55px;
+  text-decoration: underline;
+}
+
+/* ACCESS */
+.access {
+  margin-top: 68px;
+}
+
+.access-title {
+  width: 214px;
+  margin: 0 auto;
+}
+
+.access-map {
+  margin-top: 38px;
+  height: 470px;
+}
+
+.access-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* PAGE TOP */
+.pagetop {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 125px;
+  height: 125px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 74px var(--content-padding-x) 80px;
+  background-color: #fff;
+  color: #000;
+}
+
+.footer-inner {
+  display: flex;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 226px;
+}
+
+.footer-info {
+  margin-left: 6.4%;
+  font-size: 1.25rem;
+  line-height: 1.95;
+}
+
+.footer-copyright {
+  margin-top: 66px;
+  text-align: center;
+}
