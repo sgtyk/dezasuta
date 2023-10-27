@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第5回です</title>
+  <meta name="description" content="第5回です">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    .btn {
+      background: chocolate;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button type="button" class="btn">button</button>
+  <h1>初めてのjQuery</h1>
+  <script>
+    $(function() {
+      $('.btn').on('click', function(){
+        $('h1').fadeToggle();
+      });
+    });
+  </script>
+</body>
+</html>
