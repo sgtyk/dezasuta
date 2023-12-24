@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+*, *::before, *::after {
+  /* 直感的なボックスサイズのモデルを使用 */
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+  "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-seri;
+  font-feature-settings: "palt";
+  font-weight: normal;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+
+/* ここから課題 */
+
+/* 変数 */
+:root {
+  --content-width: 1080px;
+  --content-width-sm: 720px;
+  --base-color: #808080;
+  --accent-color: #1DA9B3;
+  --bg-color: #F0F5F5;
+  --bg-color-deep: #77CBD1;
+  --bg-color-label: #A8DBE2;
+  --font-size-lg: 1.125rem;
+}
+
+body {
+  font-size: 0.875rem;
+  color: var(--base-color);
+  line-height: 1.75;
+}
+
+.secton {
+  margin: 240px auto 0;
+  padding: 0 20px;
+  max-width: var(--content-width);
+  box-sizing: content-box;
+}
+
+.section-title {
+  margin-bottom: 80px;
+  font-size: 2rem;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 50px;
+  margin: 80px auto 0;
+  background-color: var(--bg-color-deep);
+  border-radius: 25px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding-left: 40px;
+}
+
+.header-logo {
+  width: 180px;
+  line-height: 1;
+}
+
+.nav {
+  height: 100%;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  margin-left: 4.4vw;
+}
+
+.nav-link {
+  font-size: 1rem;
+}
+
+.nav-item.nav-item--contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 180px;
+  background-color: var(--bg-color-deep);
+  color: #fff;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-img {
+}
+
+.hero-text {
+  position: absolute;
+  top: 11.9vw;
+  left: 10.24vw;
+  width: 21vw;
+  max-width: 288px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about-title {
+  line-height: 1.5625;
+}
+
+.about-text {
+  margin-top: 54px;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.about-text + .about-text {
+  margin-top: 32px;
+}
+
+.about-logo {
+  width: 124px;
+  margin-top: 60px;
+}
+
+.about-btn {
+}
+
+.problem {
+}
+
+.problem-title {
+}
+
+.problem-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.problem-item {
+}
+
+.problem-img {
+}
+
+.problem-copy {
+  margin-top: 24px;
+  font-size: 18px;
+  color: var(--accent-color);
+}
+
+.problem-text {
+  margin-top: 20px;
+}
+
+.service {
+}
+
+.service-title {
+}
+
+.service-list {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: var(--content-width-sm);
+  margin: 0 auto;
+}
+
+.service-item {
+}
+
+.service-imgWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.service-img {
+}
+
+.service-img--derection {
+  width: 142px;
+}
+
+.service-img--web {
+  width: 160px;
+}
+
+.service-img--sns {
+  width: 122px;
+}
+
+.service-copy {
+  margin-top: 32px;
+  font-size: var(--font-size-lg);
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.service-text {
+  margin-top: 16px;
+  line-height: 1.75;
+}
+
+.service-btn {
+}
+
+.works {
+
+}
+
+.works-title {
+}
+
+.works-list {
+  display: grid;
+  gap: 80px 45px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.works-item {
+}
+
+.works-imgWrap {
+  position: relative;
+}
+
+.works-img {
+}
+
+.works-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 26px;
+  background-color: var(--bg-color-label);
+  color: #fff;
+}
+
+.works-name {
+  margin-top: 16px;
+  font-size: var(--font-size-lg);
+  color: var(--accent-color);
+}
+
+.works-text {
+  margin-top: 4px;
+}
+
+.works-btn {
+}
+
+.contact {
+  margin-top: 240px;
+  padding: 90px 0 100px;
+  background-color: var(--bg-color);
+}
+
+.contact-title {
+  margin-bottom: 0;
+}
+
+.contact-text {
+  margin-top: 32px;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.contact-btn {
+  margin-top: 36px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: var(--bg-color-deep);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  width: 180px;
+  line-height: 1;
+}
+
+.footerNav {
+  height: 100%;
+}
+
+.footerNav-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.footerNav-item {
+  margin-left: 4.4vw;
+}
+
+.footerNav-link {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footerNav-instagram {
+  width: 32px;
+  height: 32px;
+}
