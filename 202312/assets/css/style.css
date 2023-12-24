@@ -51,9 +51,9 @@ img {
 }
 
 
-/* ここから課題 */
-
-/* 変数 */
+/* ====================
+ 変数
+======================= */
 :root {
   --content-width: 1080px;
   --content-width-sm: 720px;
@@ -65,6 +65,10 @@ img {
   --font-size-lg: 1.125rem;
 }
 
+
+/* ====================
+ 共通要素
+======================= */
 body {
   font-size: 0.875rem;
   color: var(--base-color);
@@ -85,6 +89,29 @@ body {
   text-align: center;
 }
 
+.under {
+  padding-top: 120px;
+}
+
+.under-title {
+  margin-bottom: 100px;
+  font-size: 2rem;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.underSectionTitle {
+  text-align: center;
+}
+
+.underSectionTitle-inner {
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #77CBD1;
+  font-size: 1.25rem;
+  color: var(--accent-color);
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -98,6 +125,7 @@ body {
   color: #fff;
 }
 
+/* ヘッダー */
 .header {
   display: flex;
   justify-content: space-between;
@@ -140,6 +168,59 @@ body {
   text-align: center;
 }
 
+/* コンタクト */
+.contact {
+  margin-top: 240px;
+  padding: 90px 0 100px;
+  background-color: var(--bg-color);
+}
+
+.contact-title {
+  margin-bottom: 0;
+}
+
+.contact-text {
+  margin-top: 32px;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.contact-btn {
+  margin-top: 36px;
+}
+
+/* フッター */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: var(--bg-color-deep);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  width: 180px;
+  line-height: 1;
+}
+
+.footerNav {
+  height: 100%;
+}
+
+
+/* ====================
+ トップページ
+======================= */
 .hero {
   position: relative;
 }
@@ -312,53 +393,6 @@ body {
 .works-btn {
 }
 
-.contact {
-  margin-top: 240px;
-  padding: 90px 0 100px;
-  background-color: var(--bg-color);
-}
-
-.contact-title {
-  margin-bottom: 0;
-}
-
-.contact-text {
-  margin-top: 32px;
-  font-size: 1.125rem;
-  text-align: center;
-}
-
-.contact-btn {
-  margin-top: 36px;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 90px;
-  background-color: var(--bg-color-deep);
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-logo {
-  width: 180px;
-  line-height: 1;
-}
-
-.footerNav {
-  height: 100%;
-}
-
 .footerNav-list {
   display: flex;
   align-items: center;
@@ -377,4 +411,102 @@ body {
 .footerNav-instagram {
   width: 32px;
   height: 32px;
+}
+
+/* ====================
+ 私について
+======================= */
+
+.aboutUnder {
+  max-width: var(--content-width-sm);
+  margin: 0 auto;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-inner {
+}
+
+.profile-name {
+  font-size: 1.25rem;
+  color: var(--accent-color);
+}
+
+.profile-text {
+  margin-top: 20px;
+}
+
+.profile-img {
+  width: 316px;
+  margin-left: 60px;
+}
+
+.aboutUnder-instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.aboutUnder-instagramImg {
+  width: 40px;
+  height: 40px;
+}
+
+.aboutUnder-instagramText {
+  margin-left: 12px;
+  color: #999;
+}
+
+.skill {
+  margin: 80px auto 0;
+}
+
+.skill-title.underSectionTitle {
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--bg-color-deep);
+  border-radius: 50%;
+  font-size: 0.75rem;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.skill-item + .skill-item {
+  margin-left: 20px;
+}
+
+.logo {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.logo-img {
+  margin-top: 50px;
+  width: 124px;
+  height: 106px;
+}
+
+.logo-text {
+  margin-top: 60px;
+  font-size: 1rem;
+}
+
+.logo-text + .logo-text {
+  margin-top: 24px;
 }
