@@ -1,0 +1,25 @@
+/* ====================
+ 制作実績
+======================= */
+.p-works {
+  &-category {
+    & + & {
+      margin-top: 100px;
+    }
+  }
+
+  &-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 36px;
+    background-color: var(--bg-color-label);
+    font-size: 1.125rem;
+    color: #fff;
+  }
+
+  &-list {
+    margin-top: 32px;
+  }
+}

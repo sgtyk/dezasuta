@@ -1,0 +1,107 @@
+/* ====================
+ トップページ
+======================= */
+.p-top {
+  &-hero {
+    position: relative;
+  }
+
+  &-heroImg {
+  }
+
+  &-heroText {
+    position: absolute;
+    top: 11.9vw;
+    left: 10.24vw;
+    width: 21vw;
+    max-width: 288px;
+  }
+
+  &-about {
+    text-align: center;
+  }
+
+  &-aboutTitle {
+    line-height: 1.5625;
+  }
+
+  &-aboutText {
+    margin-top: 54px;
+    font-size: 1.125rem;
+    line-height: 2;
+
+    & + & {
+      margin-top: 32px;
+    }
+  }
+
+  &-aboutLogo {
+    width: 124px;
+    margin-top: 60px;
+  }
+
+  &-problem {
+  }
+
+  &-problemList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  &-problemCopy {
+    margin-top: 24px;
+    font-size: 18px;
+    color: var(--accent-color);
+  }
+
+  &-problemText {
+    margin-top: 20px;
+  }
+
+  &-service {
+  }
+
+  &-serviceList {
+    display: grid;
+    gap: 48px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: var(--content-width-sm);
+    margin: 0 auto;
+  }
+
+  &-serviceImgWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+  }
+
+  &-serviceImg {
+    &--derection {
+      width: 142px;
+    }
+    &--web {
+      width: 160px;
+    }
+    &--sns {
+      width: 122px;
+    }
+  }
+
+  &-serviceCopy {
+    margin-top: 32px;
+    font-size: var(--font-size-lg);
+    color: var(--accent-color);
+    text-align: center;
+  }
+
+  &-serviceText {
+    margin-top: 16px;
+    line-height: 1.75;
+  }
+
+  &-works {
+
+  }
+}

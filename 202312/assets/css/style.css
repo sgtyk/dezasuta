@@ -84,7 +84,10 @@ body {
 }
 
 .c-under {
-  padding-top: 120px;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 120px 20px 0;
+  box-sizing: content-box;
 }
 .c-under-title {
   margin-bottom: 100px;
@@ -216,6 +219,45 @@ body {
 }
 
 /* ====================
+ 制作実績
+======================= */
+.c-worksList {
+  display: grid;
+  gap: 80px 45px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.c-worksList-imgWrap {
+  position: relative;
+}
+
+.c-worksList-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 26px;
+  background-color: var(--bg-color-label);
+  color: #fff;
+}
+
+.c-worksList-name {
+  margin-top: 16px;
+  font-size: var(--font-size-lg);
+  color: var(--accent-color);
+}
+
+.c-worksList-text {
+  margin-top: 4px;
+}
+
+/* ====================
+ ページ読み込み
+======================= */
+/* ====================
  トップページ
 ======================= */
 .p-top-hero {
@@ -266,19 +308,19 @@ body {
   max-width: var(--content-width-sm);
   margin: 0 auto;
 }
-.p-top-service-imgWrap {
+.p-top-serviceImgWrap {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 120px;
 }
-.p-top-service-img--derection {
+.p-top-serviceImg--derection {
   width: 142px;
 }
-.p-top-service-img--web {
+.p-top-serviceImg--web {
   width: 160px;
 }
-.p-top-service-img--sns {
+.p-top-serviceImg--sns {
   width: 122px;
 }
 .p-top-serviceCopy {
@@ -291,42 +333,6 @@ body {
   margin-top: 16px;
   line-height: 1.75;
 }
-/* ====================
- 私について
-======================= */
-.c-worksList {
-  display: grid;
-  gap: 80px 45px;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.c-worksList-imgWrap {
-  position: relative;
-}
-
-.c-worksList-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 130px;
-  height: 26px;
-  background-color: var(--bg-color-label);
-  color: #fff;
-}
-
-.c-worksList-name {
-  margin-top: 16px;
-  font-size: var(--font-size-lg);
-  color: var(--accent-color);
-}
-
-.c-worksList-text {
-  margin-top: 4px;
-}
-
 /* ====================
  私について
 ======================= */
@@ -399,4 +405,24 @@ body {
 }
 .p-about-logoText + .p-about-logoText {
   margin-top: 24px;
+}
+
+/* ====================
+ 制作実績
+======================= */
+.p-works-category + .p-works-category {
+  margin-top: 100px;
+}
+.p-works-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 36px;
+  background-color: var(--bg-color-label);
+  font-size: 1.125rem;
+  color: #fff;
+}
+.p-works-list {
+  margin-top: 32px;
 }/*# sourceMappingURL=style.css.map */

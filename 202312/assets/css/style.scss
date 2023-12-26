@@ -90,7 +90,10 @@ body {
 }
 
 .c-under {
-  padding-top: 120px;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 120px 20px 0;
+  box-sizing: content-box;
 
   &-title {
     margin-bottom: 100px;
@@ -239,115 +242,7 @@ body {
 
 
 /* ====================
- トップページ
-======================= */
-.p-top {
-  &-hero {
-    position: relative;
-  }
-
-  &-heroImg {
-  }
-
-  &-heroText {
-    position: absolute;
-    top: 11.9vw;
-    left: 10.24vw;
-    width: 21vw;
-    max-width: 288px;
-  }
-
-  &-about {
-    text-align: center;
-  }
-
-  &-aboutTitle {
-    line-height: 1.5625;
-  }
-
-  &-aboutText {
-    margin-top: 54px;
-    font-size: 1.125rem;
-    line-height: 2;
-
-    & + & {
-      margin-top: 32px;
-    }
-  }
-
-  &-aboutLogo {
-    width: 124px;
-    margin-top: 60px;
-  }
-
-  &-problem {
-  }
-
-  &-problemList {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-  }
-
-  &-problemCopy {
-    margin-top: 24px;
-    font-size: 18px;
-    color: var(--accent-color);
-  }
-
-  &-problemText {
-    margin-top: 20px;
-  }
-
-  &-service {
-  }
-
-  &-serviceList {
-    display: grid;
-    gap: 48px;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: var(--content-width-sm);
-    margin: 0 auto;
-  }
-
-  &-service-imgWrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-  }
-
-  &-service-img {
-    &--derection {
-      width: 142px;
-    }
-    &--web {
-      width: 160px;
-    }
-    &--sns {
-      width: 122px;
-    }
-  }
-
-  &-serviceCopy {
-    margin-top: 32px;
-    font-size: var(--font-size-lg);
-    color: var(--accent-color);
-    text-align: center;
-  }
-
-  &-serviceText {
-    margin-top: 16px;
-    line-height: 1.75;
-  }
-
-  &-works {
-
-  }
-}
-
-/* ====================
- 私について
+ 制作実績
 ======================= */
 .c-worksList {
   display: grid;
@@ -389,97 +284,8 @@ body {
 }
 
 /* ====================
- 私について
+ ページ読み込み
 ======================= */
-.p-about {
-  &-profile {
-    display: flex;
-    align-items: center;
-    max-width: var(--content-width-sm);
-    margin: 0 auto;
-  }
-
-  &-profileInner {
-  }
-
-  &-profileName {
-    font-size: 1.25rem;
-    color: var(--accent-color);
-  }
-
-  &-profileText {
-    margin-top: 20px;
-  }
-
-  &-profileImg {
-    width: 316px;
-    margin-left: 60px;
-  }
-
-  &-instagram {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-  }
-
-  &-instagramImg {
-    width: 40px;
-    height: 40px;
-  }
-
-  &-instagramText {
-    margin-left: 12px;
-    color: #999;
-  }
-
-  &-skill {
-    margin: 80px auto 0;
-  }
-
-  &-skillList {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-
-  &-skillItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    border: 1px solid var(--bg-color-deep);
-    border-radius: 50%;
-    font-size: 0.75rem;
-    color: var(--accent-color);
-    text-align: center;
-
-    & + & {
-      margin-left: 20px;
-    }
-  }
-
-  &-logo {
-    margin-top: 150px;
-    text-align: center;
-  }
-
-  &-logoImg {
-    margin-top: 50px;
-    width: 124px;
-    height: 106px;
-  }
-
-  &-logoText {
-    margin-top: 60px;
-    font-size: 1rem;
-
-    & + & {
-      margin-top: 24px;
-    }
-  }
-}
-
-
-
+@import "./pages/top";
+@import "./pages/about";
+@import "./pages/works";
