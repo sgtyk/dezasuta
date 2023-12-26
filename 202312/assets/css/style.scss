@@ -1,0 +1,485 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+*, *::before, *::after {
+  /* 直感的なボックスサイズのモデルを使用 */
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+  "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-seri;
+  font-feature-settings: "palt";
+  font-weight: normal;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+
+/* ====================
+ 変数
+======================= */
+:root {
+  --content-width: 1080px;
+  --content-width-sm: 720px;
+  --base-color: #808080;
+  --accent-color: #1DA9B3;
+  --bg-color: #F0F5F5;
+  --bg-color-deep: #77CBD1;
+  --bg-color-label: #A8DBE2;
+  --font-size-lg: 1.125rem;
+}
+
+
+/* ====================
+ 共通要素
+======================= */
+body {
+  font-size: 0.875rem;
+  color: var(--base-color);
+  line-height: 1.75;
+}
+
+.c-section {
+  margin: 240px auto 0;
+  padding: 0 20px;
+  max-width: var(--content-width);
+  box-sizing: content-box;
+
+  &-title {
+    margin-bottom: 80px;
+    font-size: 2rem;
+    color: var(--accent-color);
+    text-align: center;
+  }
+}
+
+.c-under {
+  padding-top: 120px;
+
+  &-title {
+    margin-bottom: 100px;
+    font-size: 2rem;
+    color: var(--accent-color);
+    text-align: center;
+  }
+}
+
+.c-underSectionTitle {
+  text-align: center;
+
+  &-inner {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #77CBD1;
+    font-size: 1.25rem;
+    color: var(--accent-color);
+  }
+}
+
+.c-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 50px;
+  margin: 80px auto 0;
+  background-color: var(--bg-color-deep);
+  border-radius: 25px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* ヘッダー */
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding-left: 40px;
+
+  &-logo {
+    width: 180px;
+    line-height: 1;
+  }
+}
+
+.c-nav {
+  height: 100%;
+
+  &-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &-item {
+    margin-left: 4.4vw;
+    &--contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 180px;
+      background-color: var(--bg-color-deep);
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  &-link {
+    font-size: 1rem;
+  }
+}
+
+/* コンタクト */
+.c-contact {
+  margin-top: 240px;
+  padding: 90px 0 100px;
+  background-color: var(--bg-color);
+
+  &-title {
+    margin-bottom: 0;
+  }
+
+  &-text {
+    margin-top: 32px;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  &-c-btn {
+    margin-top: 36px;
+  }
+}
+
+
+/* フッター */
+.c-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: var(--bg-color-deep);
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &-logo {
+    width: 180px;
+    line-height: 1;
+  }
+}
+
+.c-footerNav {
+  height: 100%;
+
+  &-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &-item {
+    margin-left: 4.4vw;
+  }
+
+  &-link {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  &-instagram {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+/* ====================
+ トップページ
+======================= */
+.p-top {
+  &-hero {
+    position: relative;
+  }
+
+  &-heroImg {
+  }
+
+  &-heroText {
+    position: absolute;
+    top: 11.9vw;
+    left: 10.24vw;
+    width: 21vw;
+    max-width: 288px;
+  }
+
+  &-about {
+    text-align: center;
+  }
+
+  &-aboutTitle {
+    line-height: 1.5625;
+  }
+
+  &-aboutText {
+    margin-top: 54px;
+    font-size: 1.125rem;
+    line-height: 2;
+
+    & + & {
+      margin-top: 32px;
+    }
+  }
+
+  &-aboutLogo {
+    width: 124px;
+    margin-top: 60px;
+  }
+
+  &-problem {
+  }
+
+  &-problemList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  &-problemCopy {
+    margin-top: 24px;
+    font-size: 18px;
+    color: var(--accent-color);
+  }
+
+  &-problemText {
+    margin-top: 20px;
+  }
+
+  &-service {
+  }
+
+  &-serviceList {
+    display: grid;
+    gap: 48px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: var(--content-width-sm);
+    margin: 0 auto;
+  }
+
+  &-service-imgWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+  }
+
+  &-service-img {
+    &--derection {
+      width: 142px;
+    }
+    &--web {
+      width: 160px;
+    }
+    &--sns {
+      width: 122px;
+    }
+  }
+
+  &-serviceCopy {
+    margin-top: 32px;
+    font-size: var(--font-size-lg);
+    color: var(--accent-color);
+    text-align: center;
+  }
+
+  &-serviceText {
+    margin-top: 16px;
+    line-height: 1.75;
+  }
+
+  &-works {
+
+  }
+}
+
+/* ====================
+ 私について
+======================= */
+.c-worksList {
+  display: grid;
+  gap: 80px 45px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.c-worksList-item {
+}
+
+.c-worksList-imgWrap {
+  position: relative;
+}
+
+.c-worksList-img {
+}
+
+.c-worksList-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 26px;
+  background-color: var(--bg-color-label);
+  color: #fff;
+}
+
+.c-worksList-name {
+  margin-top: 16px;
+  font-size: var(--font-size-lg);
+  color: var(--accent-color);
+}
+
+.c-worksList-text {
+  margin-top: 4px;
+}
+
+/* ====================
+ 私について
+======================= */
+.p-about {
+  &-profile {
+    display: flex;
+    align-items: center;
+    max-width: var(--content-width-sm);
+    margin: 0 auto;
+  }
+
+  &-profileInner {
+  }
+
+  &-profileName {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+  }
+
+  &-profileText {
+    margin-top: 20px;
+  }
+
+  &-profileImg {
+    width: 316px;
+    margin-left: 60px;
+  }
+
+  &-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  &-instagramImg {
+    width: 40px;
+    height: 40px;
+  }
+
+  &-instagramText {
+    margin-left: 12px;
+    color: #999;
+  }
+
+  &-skill {
+    margin: 80px auto 0;
+  }
+
+  &-skillList {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  &-skillItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--bg-color-deep);
+    border-radius: 50%;
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    text-align: center;
+
+    & + & {
+      margin-left: 20px;
+    }
+  }
+
+  &-logo {
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  &-logoImg {
+    margin-top: 50px;
+    width: 124px;
+    height: 106px;
+  }
+
+  &-logoText {
+    margin-top: 60px;
+    font-size: 1rem;
+
+    & + & {
+      margin-top: 24px;
+    }
+  }
+}
+
+
+

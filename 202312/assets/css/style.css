@@ -1,7 +1,5 @@
-@charset "utf-8";
-
+@charset "UTF-8";
 /* cssリセット */
-
 /*利用するタグによってこちらの内容は増やす*/
 *, *::before, *::after {
   /* 直感的なボックスサイズのモデルを使用 */
@@ -21,8 +19,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
-  "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-seri;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-seri;
   font-feature-settings: "palt";
   font-weight: normal;
 }
@@ -50,7 +47,6 @@ img {
   border: none;
 }
 
-
 /* ====================
  変数
 ======================= */
@@ -65,7 +61,6 @@ img {
   --font-size-lg: 1.125rem;
 }
 
-
 /* ====================
  共通要素
 ======================= */
@@ -75,36 +70,33 @@ body {
   line-height: 1.75;
 }
 
-.secton {
+.c-section {
   margin: 240px auto 0;
   padding: 0 20px;
   max-width: var(--content-width);
   box-sizing: content-box;
 }
-
-.section-title {
+.c-section-title {
   margin-bottom: 80px;
   font-size: 2rem;
   color: var(--accent-color);
   text-align: center;
 }
 
-.under {
+.c-under {
   padding-top: 120px;
 }
-
-.under-title {
+.c-under-title {
   margin-bottom: 100px;
   font-size: 2rem;
   color: var(--accent-color);
   text-align: center;
 }
 
-.underSectionTitle {
+.c-underSectionTitle {
   text-align: center;
 }
-
-.underSectionTitle-inner {
+.c-underSectionTitle-inner {
   display: inline-block;
   padding-bottom: 8px;
   border-bottom: 1px solid #77CBD1;
@@ -112,7 +104,7 @@ body {
   color: var(--accent-color);
 }
 
-.btn {
+.c-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,38 +118,30 @@ body {
 }
 
 /* ヘッダー */
-.header {
+.c-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 90px;
   padding-left: 40px;
 }
-
-.header-logo {
+.c-header-logo {
   width: 180px;
   line-height: 1;
 }
 
-.nav {
+.c-nav {
   height: 100%;
 }
-
-.nav-list {
+.c-nav-list {
   display: flex;
   align-items: center;
   height: 100%;
 }
-
-.nav-item {
+.c-nav-item {
   margin-left: 4.4vw;
 }
-
-.nav-link {
-  font-size: 1rem;
-}
-
-.nav-item.nav-item--contact {
+.c-nav-item--contact {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,38 +151,37 @@ body {
   color: #fff;
   text-align: center;
 }
+.c-nav-link {
+  font-size: 1rem;
+}
 
 /* コンタクト */
-.contact {
+.c-contact {
   margin-top: 240px;
   padding: 90px 0 100px;
   background-color: var(--bg-color);
 }
-
-.contact-title {
+.c-contact-title {
   margin-bottom: 0;
 }
-
-.contact-text {
+.c-contact-text {
   margin-top: 32px;
   font-size: 1.125rem;
   text-align: center;
 }
-
-.contact-btn {
+.c-contact-c-btn {
   margin-top: 36px;
 }
 
 /* フッター */
-.footer {
+.c-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 90px;
   background-color: var(--bg-color-deep);
 }
-
-.footer-inner {
+.c-footer-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -207,167 +190,121 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-.footer-logo {
+.c-footer-logo {
   width: 180px;
   line-height: 1;
 }
 
-.footerNav {
+.c-footerNav {
   height: 100%;
 }
-
+.c-footerNav-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.c-footerNav-item {
+  margin-left: 4.4vw;
+}
+.c-footerNav-link {
+  font-size: 1rem;
+  color: #fff;
+}
+.c-footerNav-instagram {
+  width: 32px;
+  height: 32px;
+}
 
 /* ====================
  トップページ
 ======================= */
-.hero {
+.p-top-hero {
   position: relative;
 }
-
-.hero-img {
-}
-
-.hero-text {
+.p-top-heroText {
   position: absolute;
   top: 11.9vw;
   left: 10.24vw;
   width: 21vw;
   max-width: 288px;
 }
-
-.about {
+.p-top-about {
   text-align: center;
 }
-
-.about-title {
+.p-top-aboutTitle {
   line-height: 1.5625;
 }
-
-.about-text {
+.p-top-aboutText {
   margin-top: 54px;
   font-size: 1.125rem;
   line-height: 2;
 }
-
-.about-text + .about-text {
+.p-top-aboutText + .p-top-aboutText {
   margin-top: 32px;
 }
-
-.about-logo {
+.p-top-aboutLogo {
   width: 124px;
   margin-top: 60px;
 }
-
-.about-btn {
-}
-
-.problem {
-}
-
-.problem-title {
-}
-
-.problem-list {
+.p-top-problemList {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
-
-.problem-item {
-}
-
-.problem-img {
-}
-
-.problem-copy {
+.p-top-problemCopy {
   margin-top: 24px;
   font-size: 18px;
   color: var(--accent-color);
 }
-
-.problem-text {
+.p-top-problemText {
   margin-top: 20px;
 }
-
-.service {
-}
-
-.service-title {
-}
-
-.service-list {
+.p-top-serviceList {
   display: grid;
   gap: 48px;
   grid-template-columns: repeat(3, 1fr);
   max-width: var(--content-width-sm);
   margin: 0 auto;
 }
-
-.service-item {
-}
-
-.service-imgWrap {
+.p-top-service-imgWrap {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 120px;
 }
-
-.service-img {
-}
-
-.service-img--derection {
+.p-top-service-img--derection {
   width: 142px;
 }
-
-.service-img--web {
+.p-top-service-img--web {
   width: 160px;
 }
-
-.service-img--sns {
+.p-top-service-img--sns {
   width: 122px;
 }
-
-.service-copy {
+.p-top-serviceCopy {
   margin-top: 32px;
   font-size: var(--font-size-lg);
   color: var(--accent-color);
   text-align: center;
 }
-
-.service-text {
+.p-top-serviceText {
   margin-top: 16px;
   line-height: 1.75;
 }
-
-.service-btn {
-}
-
-.works {
-
-}
-
-.works-title {
-}
-
-.works-list {
+/* ====================
+ 私について
+======================= */
+.c-worksList {
   display: grid;
   gap: 80px 45px;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.works-item {
-}
-
-.works-imgWrap {
+.c-worksList-imgWrap {
   position: relative;
 }
 
-.works-img {
-}
-
-.works-label {
+.c-worksList-label {
   position: absolute;
   top: 0;
   left: 0;
@@ -380,101 +317,59 @@ body {
   color: #fff;
 }
 
-.works-name {
+.c-worksList-name {
   margin-top: 16px;
   font-size: var(--font-size-lg);
   color: var(--accent-color);
 }
 
-.works-text {
+.c-worksList-text {
   margin-top: 4px;
-}
-
-.works-btn {
-}
-
-.footerNav-list {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.footerNav-item {
-  margin-left: 4.4vw;
-}
-
-.footerNav-link {
-  font-size: 1rem;
-  color: #fff;
-}
-
-.footerNav-instagram {
-  width: 32px;
-  height: 32px;
 }
 
 /* ====================
  私について
 ======================= */
-
-.aboutUnder {
+.p-about-profile {
+  display: flex;
+  align-items: center;
   max-width: var(--content-width-sm);
   margin: 0 auto;
 }
-
-.profile {
-  display: flex;
-  align-items: center;
-}
-
-.profile-inner {
-}
-
-.profile-name {
+.p-about-profileName {
   font-size: 1.25rem;
   color: var(--accent-color);
 }
-
-.profile-text {
+.p-about-profileText {
   margin-top: 20px;
 }
-
-.profile-img {
+.p-about-profileImg {
   width: 316px;
   margin-left: 60px;
 }
-
-.aboutUnder-instagram {
+.p-about-instagram {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
 }
-
-.aboutUnder-instagramImg {
+.p-about-instagramImg {
   width: 40px;
   height: 40px;
 }
-
-.aboutUnder-instagramText {
+.p-about-instagramText {
   margin-left: 12px;
   color: #999;
 }
-
-.skill {
+.p-about-skill {
   margin: 80px auto 0;
 }
-
-.skill-title.underSectionTitle {
-}
-
-.skill-list {
+.p-about-skillList {
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
-
-.skill-item {
+.p-about-skillItem {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,27 +381,22 @@ body {
   color: var(--accent-color);
   text-align: center;
 }
-
-.skill-item + .skill-item {
+.p-about-skillItem + .p-about-skillItem {
   margin-left: 20px;
 }
-
-.logo {
+.p-about-logo {
   margin-top: 150px;
   text-align: center;
 }
-
-.logo-img {
+.p-about-logoImg {
   margin-top: 50px;
   width: 124px;
   height: 106px;
 }
-
-.logo-text {
+.p-about-logoText {
   margin-top: 60px;
   font-size: 1rem;
 }
-
-.logo-text + .logo-text {
+.p-about-logoText + .p-about-logoText {
   margin-top: 24px;
-}
+}/*# sourceMappingURL=style.css.map */
