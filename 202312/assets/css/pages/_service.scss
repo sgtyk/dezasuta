@@ -1,0 +1,63 @@
+/* ====================
+ サービス
+======================= */
+.p-service {
+  &-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: content-box;
+
+    & + & {
+      margin-top: 100px;
+    }
+  }
+
+  &-sectionImgWrap {
+    display: flex;
+    align-items: center;
+    width: 190px;
+  }
+
+  &-sectionImg {
+    &--derection {
+      width: 108px;
+    }
+    &--web {
+      width: 140px;
+    }
+    &--sns {
+      width: 120px;
+    }
+    &--design {
+      width: 120px;
+    }
+    &--pc {
+      width: 108px;
+    }
+  }
+
+  &-sectionInner {
+    width: 470px;
+  }
+
+  &-sectionTitle {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+  }
+
+  &-sectionText {
+    margin-top: 12px;
+    font-size: 0.9375rem;
+  }
+
+  &-sectionBtn {
+    margin: 24px 0 0 0;
+    width: 220px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+}

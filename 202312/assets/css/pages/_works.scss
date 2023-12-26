@@ -9,7 +9,7 @@
   }
 
   &-label {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 180px;
@@ -17,6 +17,9 @@
     background-color: var(--bg-color-label);
     font-size: 1.125rem;
     color: #fff;
+    & + & {
+      margin-left: 12px;
+    }
   }
 
   &-list {

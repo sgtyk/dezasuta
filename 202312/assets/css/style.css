@@ -414,7 +414,7 @@ body {
   margin-top: 100px;
 }
 .p-works-label {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 180px;
@@ -423,6 +423,62 @@ body {
   font-size: 1.125rem;
   color: #fff;
 }
+.p-works-label + .p-works-label {
+  margin-left: 12px;
+}
 .p-works-list {
   margin-top: 32px;
+}
+
+/* ====================
+ サービス
+======================= */
+.p-service-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: content-box;
+}
+.p-service-section + .p-service-section {
+  margin-top: 100px;
+}
+.p-service-sectionImgWrap {
+  display: flex;
+  align-items: center;
+  width: 190px;
+}
+.p-service-sectionImg--derection {
+  width: 108px;
+}
+.p-service-sectionImg--web {
+  width: 140px;
+}
+.p-service-sectionImg--sns {
+  width: 120px;
+}
+.p-service-sectionImg--design {
+  width: 120px;
+}
+.p-service-sectionImg--pc {
+  width: 108px;
+}
+.p-service-sectionInner {
+  width: 470px;
+}
+.p-service-sectionTitle {
+  font-size: 1.25rem;
+  color: var(--accent-color);
+}
+.p-service-sectionText {
+  margin-top: 12px;
+  font-size: 0.9375rem;
+}
+.p-service-sectionBtn {
+  margin: 24px 0 0 0;
+  width: 220px;
+  height: 32px;
+  font-size: 0.75rem;
 }/*# sourceMappingURL=style.css.map */
