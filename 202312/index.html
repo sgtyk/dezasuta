@@ -10,7 +10,7 @@
 </head>
 <body class="p-top">
   <header class="c-header">
-    <h1>
+    <h1 class="c-header-title">
       <a href="/">
         <img src="assets/images/svg/logo.svg" alt="YUKA SHIGETA" class="c-header-logo">
       </a>
@@ -35,16 +35,41 @@
         </li>
       </ul>
     </nav>
+    <div class="spBtn">
+      <span class="spBtn-bar"></span>
+    </div>
+    <nav class="spNav">
+      <ul class="spNav-list">
+        <li class="spNav-item">
+          <a href="#about" class="spNav-link">ABOUT US</a>
+        </li>
+        <li class="spNav-item">
+          <a href="#menu" class="spNav-link">MENU</a>
+        </li>
+        <li class="spNav-item">
+          <a href="#gallery" class="spNav-link">GALLERY</a>
+        </li>
+        <li class="spNav-item">
+          <a href="#event" class="spNav-link">EVENT</a>
+        </li>
+        <li class="spNav-item">
+          <a href="#access" class="spNav-link">ACCESS</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <div class="p-top-hero">
-    <img src="assets/images/pc_hero@2x.jpg" alt="パソコンを操作する写真" class="p-top-heroImg">
+    <picture>
+      <source media="(max-width: 767px)" srcset="assets/images/sp_hero@2x.jpg">
+      <img src="assets/images/pc_hero@2x.jpg" alt="パソコンを操作する写真" class="p-top-heroImg">
+    </picture>
     <img src="assets/images/hero_text@2x.png" alt="あなたのビズネスがWEBで羽ばたく" class="p-top-heroText">
   </div>
 
   <section class="p-top-about c-section">
     <h2 class="p-top-aboutTitle c-section-title">
-      あなたのビジネスを同じ目線で考え<br>
+      あなたのビジネスを<br class="pc-none">同じ目線で考え<br>
       サポートしていきます
     </h2>
     <p class="p-top-aboutText">

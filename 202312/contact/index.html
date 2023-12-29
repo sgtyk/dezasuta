@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>私について | YUKA SHIGETA | ホームページ制作・SNS運用代行</title>
+  <title>コンタクト | YUKA SHIGETA | ホームページ制作・SNS運用代行</title>
   <meta name="description" content="重田ゆかのポートフォリオサイトです。これまでの実績やサービスについて紹介しています。お気軽にお問いあわせください。">
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>
+<body class="p-contact">
   <header class="c-header">
     <a href="/">
       <img src="../assets/images/svg/logo.svg" alt="YUKA SHIGETA" class="c-header-logo">
@@ -35,23 +35,45 @@
     </nav>
   </header>
 
-  <section class="about under">
-    <h1 class="under-title">私について</h1>
-    <div class="about-inner">
-      <section class="profile">
-        <h2 class="profile-title"></h2>
-      </section>
-    </div><!-- /.about-inner -->
-  </section>
-
-
-  <section class="c-contact">
-    <h2 class="c-contact-title c-section-title">コンタクト</h2>
-    <p class="c-contact-text">
-      zoomにて無料相談受付中です。<br>
-      まずはお気軽にご連絡ください。
+  <section class="c-under">
+    <h1 class="c-under-title p-contact-title">コンタクト</h1>
+    <p class="p-contact-text">
+      ホームページ制作やデザイン作成について、<br>
+      質問やご相談をお受けしています。<br>
+      2営業日以内にご返信いたします。<br>
+      万が一返信がない場合は、お手数ですがもう一度お問い合わせ頂きますようお願いいたします。
     </p>
-    <a href="/c-contact/" class="c-contact-c-btn c-btn">無料で相談してみる</a>
+
+    <form class="p-contact-form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdaROxW-Uh29qpEeEmyjzMFUhjl3o6qkMED5Xa7D45dFmoOKA/formResponse?embedded=true">
+      <div class="p-contact-formItem">
+        <label for="name" class="p-contact-formLabel">
+          お名前
+          <span class="p-contact-formRequired">必須</span>
+        </label>
+        <input type="text" required id="name" name="entry.967146168" class="p-contact-formInput">
+      </div>
+
+      <div class="p-contact-formItem">
+        <label for="company" class="p-contact-formLabel">会社名</label>
+        <input type="text" id="company" name="entry.2032951155" class="p-contact-formInput">
+      </div>
+
+      <div class="p-contact-formItem">
+        <label for="mail" class="p-contact-formLabel">
+          メールアドレス
+          <span class="p-contact-formRequired">必須</span>
+        </label>
+        <input type="email" required id="mail" name="entry.843175598" class="p-contact-formInput">
+      </div>
+      <div class="p-contact-formItem">
+        <label for="content" class="p-contact-formLabel">
+          お問い合わせ内容
+          <span class="p-contact-formRequired">必須</span>
+        </label>
+        <textarea id="content" required cols="30" rows="10" name="entry.368047747" class="p-contact-formInput p-contact-formInput--textarea"></textarea>
+      </div>
+      <button type="submit" class="c-btn">メッセージを送る</button>
+    </form>
   </section>
 
   <footer class="c-footer">
@@ -82,11 +104,5 @@
       </nav>
     </div>
   </footer>
-
-  <script>
-    $(function() {
-
-    });
-  </script>
 </body>
 </html>

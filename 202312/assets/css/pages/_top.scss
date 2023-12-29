@@ -15,6 +15,12 @@
     left: 10.24vw;
     width: 21vw;
     max-width: 288px;
+
+    @media screen and (max-width: 767px) {
+      top: 26.6vw;
+      left: 8vw;
+      width: 55.2vw;
+    }
   }
 
   &-about {
@@ -30,14 +36,28 @@
     font-size: 1.125rem;
     line-height: 2;
 
+    @media screen and (max-width: 767px) {
+      margin-top: 40px;
+      font-size: 0.9375rem;
+    }
+
     & + & {
       margin-top: 32px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 24px;
+      }
     }
   }
 
   &-aboutLogo {
     width: 124px;
     margin-top: 60px;
+
+    @media screen and (max-width: 767px) {
+      width: 88px;
+      margin-top: 40px;
+    }
   }
 
   &-problem {
@@ -47,16 +67,31 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
   }
 
   &-problemCopy {
     margin-top: 24px;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--accent-color);
+
+    @media screen and (max-width: 767px) {
+      margin-top: 16px;
+      font-size: 1rem;
+    }
   }
 
   &-problemText {
     margin-top: 20px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 10px;
+      line-height: 1.85;
+    }
   }
 
   &-service {
@@ -68,6 +103,11 @@
     grid-template-columns: repeat(3, 1fr);
     max-width: var(--content-width-sm);
     margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
   }
 
   &-serviceImgWrap {
@@ -75,17 +115,29 @@
     justify-content: center;
     align-items: center;
     height: 120px;
+
+    @media screen and (max-width: 767px) {
+    }
   }
 
   &-serviceImg {
     &--derection {
       width: 142px;
+
+      @media screen and (max-width: 767px) {
+      }
     }
     &--web {
       width: 160px;
+
+      @media screen and (max-width: 767px) {
+      }
     }
     &--sns {
       width: 122px;
+
+      @media screen and (max-width: 767px) {
+      }
     }
   }
 
@@ -94,14 +146,16 @@
     font-size: var(--font-size-lg);
     color: var(--accent-color);
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+    }
   }
 
   &-serviceText {
     margin-top: 16px;
     line-height: 1.75;
-  }
 
-  &-works {
-
+    @media screen and (max-width: 767px) {
+    }
   }
 }
