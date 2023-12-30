@@ -7,14 +7,26 @@
     align-items: center;
     max-width: var(--content-width-sm);
     margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse
+    }
   }
 
   &-profileInner {
+    @media screen and (max-width: 767px) {
+      margin-top: 40px;
+    }
   }
 
   &-profileName {
     font-size: 1.25rem;
     color: var(--accent-color);
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.125rem;
+      text-align: center;
+    }
   }
 
   &-profileText {
@@ -24,6 +36,11 @@
   &-profileImg {
     width: 316px;
     margin-left: 60px;
+
+    @media screen and (max-width: 767px) {
+      width: 300px;
+      margin: 0 auto;
+    }
   }
 
   &-instagram {
@@ -31,26 +48,48 @@
     justify-content: center;
     align-items: center;
     margin-top: 60px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 40px;
+    }
   }
 
   &-instagramImg {
     width: 40px;
     height: 40px;
+
+    @media screen and (max-width: 767px) {
+      width: 36px;
+      height: 36px;
+    }
   }
 
   &-instagramText {
     margin-left: 12px;
     color: #999;
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.75rem;
+    }
   }
 
   &-skill {
     margin: 80px auto 0;
+
+    @media screen and (max-width: 767px) {
+    }
   }
 
   &-skillList {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+
+    @media screen and (max-width: 767px) {
+      display: grid;
+      grid-template-columns: repeat(3, 64px);
+      gap: 24px 12px;
+    }
   }
 
   &-skillItem {
@@ -65,25 +104,49 @@
     color: var(--accent-color);
     text-align: center;
 
+    @media screen and (max-width: 767px) {
+      width: 64px;
+      height: 64px;
+      font-size: 0.6875rem;
+    }
+
     & + & {
       margin-left: 20px;
+
+      @media screen and (max-width: 767px) {
+        margin-left: 0;
+      }
     }
   }
 
   &-logo {
     margin-top: 150px;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 110px;
+    }
   }
 
   &-logoImg {
     margin-top: 50px;
     width: 124px;
     height: 106px;
+
+    @media screen and (max-width: 767px) {
+      width: 86px;
+      height: 74px;
+    }
   }
 
   &-logoText {
     margin-top: 60px;
     font-size: 1rem;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 32px;
+      font-size: 0.875rem;
+    }
 
     & + & {
       margin-top: 24px;
