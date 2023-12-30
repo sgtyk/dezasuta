@@ -4,16 +4,28 @@
 .p-contact {
   &-title {
     margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 24px;
+    }
   }
 
   &-text {
     font-size: 1rem;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.875rem;
+    }
   }
 
   &-form {
     max-width: var(--content-width-sm);
     margin: 80px auto 240px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 200px;
+    }
   }
 
   &-formItem {
