@@ -18,27 +18,6 @@
     }
   }
 
-  &-label {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 36px;
-    background-color: var(--bg-color-label);
-    font-size: 1.125rem;
-    color: #fff;
-
-    @media screen and (max-width: 767px) {
-      width: 150px;
-      height: 32px;
-      font-size: 0.9375rem;
-    }
-
-    & + & {
-      margin-left: 12px;
-    }
-  }
-
   &-list {
     margin-top: 32px;
   }

@@ -122,7 +122,7 @@ body {
   box-sizing: content-box;
 
   @media screen and (max-width: 767px) {
-    padding: 70px 20px 0;
+    padding: 60px 20px 0;
   }
 
   &-title {
@@ -508,21 +508,38 @@ body {
 }
 
 .c-worksLabel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
-  height: 26px;
+  width: 180px;
+  height: 36px;
   background-color: var(--bg-color-label);
+  font-size: 1.125rem;
   color: #fff;
 
   @media screen and (max-width: 767px) {
-    width: 120px;
-    height: 24px;
-    font-size: 0.75rem;
+    width: 150px;
+    height: 32px;
+    font-size: 0.9375rem;
+  }
+
+  & + & {
+    margin-left: 12px;
+  }
+
+  &--list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 26px;
+    font-size: 0.875rem;
+
+    @media screen and (max-width: 767px) {
+      width: 120px;
+      height: 24px;
+      font-size: 0.75rem;
+    }
   }
 }
 
@@ -532,5 +549,6 @@ body {
 @import "./pages/top";
 @import "./pages/about";
 @import "./pages/works";
+@import "./pages/worksDetail";
 @import "./pages/service";
 @import "./pages/contact";

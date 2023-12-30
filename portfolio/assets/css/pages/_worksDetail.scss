@@ -1,0 +1,146 @@
+/* ====================
+ 制作実績の詳細ページ
+======================= */
+.p-worksDetail {
+  &-inner {
+    max-width: var(--content-width-sm);
+    margin: 0 auto;
+  }
+
+  &-titleWrapper {
+    text-align: center;
+  }
+
+  &-title {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+    }
+  }
+
+  &-label {
+  }
+
+  &-name {
+    margin-top: 24px;
+    font-size: 1.375rem;
+    color: var(--accent-color);
+
+    @media screen and (max-width: 767px) {
+      margin-top: 16px;
+      font-size: 1.125rem;
+    }
+  }
+
+  &-work {
+    margin-top: 8px;
+    font-size: 1.125rem;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 4px;
+      font-size: 0.75rem;
+    }
+  }
+
+  &-img {
+    margin: 80px 0 32px;
+
+    @media screen and (max-width: 767px) {
+      margin: 32px 0;
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: bold;
+
+    @media screen and (max-width: 767px) {
+      font-size: 1rem;
+    }
+  }
+
+  &-linkIcon {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+
+    @media screen and (max-width: 767px) {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &-text {
+    margin-top: 20px;
+    font-size: 1rem;
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.875rem;
+    }
+
+    & + & {
+      margin-top: 12px;
+
+      @media screen and (max-width: 767px) {
+      }
+    }
+  }
+
+  &-list {
+    margin-top: 40px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
+  }
+
+  &-item {
+    display: flex;
+
+    & + & {
+      margin-top: 8px;
+    }
+  }
+
+  &-itemTitle {
+    width: 60px;
+    color: var(--accent-color);
+
+    @media screen and (max-width: 767px) {
+    }
+  }
+
+  &-itemText {
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &-voice {
+    margin-top: 120px;
+
+    @media screen and (max-width: 767px) {
+    }
+  }
+
+  &-voiceText {
+    margin-top: 32px;
+    font-size: 1rem;
+
+    @media screen and (max-width: 767px) {
+    }
+  }
+
+  &-content {
+    display: block;
+    width: 540px;
+    margin: 80px auto 0;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin: 60px auto 0;
+    }
+  }
+}
