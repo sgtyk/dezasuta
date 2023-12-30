@@ -5,6 +5,16 @@
   &-category {
     & + & {
       margin-top: 100px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 120px;
+      }
+    }
+  }
+
+  &-labelWrap {
+    @media screen and (max-width: 767px) {
+      text-align: center;
     }
   }
 
@@ -17,6 +27,13 @@
     background-color: var(--bg-color-label);
     font-size: 1.125rem;
     color: #fff;
+
+    @media screen and (max-width: 767px) {
+      width: 150px;
+      height: 32px;
+      font-size: 0.9375rem;
+    }
+
     & + & {
       margin-left: 12px;
     }

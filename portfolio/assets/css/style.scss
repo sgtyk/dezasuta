@@ -318,7 +318,7 @@ body {
 
   &-logo {
     position: absolute;
-    top: 20px;
+    top: 19px;
     left: 22px;
     width: 148px;
   }
@@ -486,25 +486,6 @@ body {
 .c-worksList-img {
 }
 
-.c-worksList-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 130px;
-  height: 26px;
-  background-color: var(--bg-color-label);
-  color: #fff;
-
-  @media screen and (max-width: 767px) {
-    width: 120px;
-    height: 24px;
-    font-size: 0.75rem;
-  }
-}
-
 .c-worksList-name {
   margin-top: 16px;
   font-size: var(--font-size-lg);
@@ -521,6 +502,25 @@ body {
 
   @media screen and (max-width: 767px) {
     margin-top: 2px;
+    font-size: 0.75rem;
+  }
+}
+
+.c-worksLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 26px;
+  background-color: var(--bg-color-label);
+  color: #fff;
+
+  @media screen and (max-width: 767px) {
+    width: 120px;
+    height: 24px;
     font-size: 0.75rem;
   }
 }

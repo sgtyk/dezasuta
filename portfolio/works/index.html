@@ -33,14 +33,43 @@
         </li>
       </ul>
     </nav>
+    <div class="c-spBtn" id="spBtn">
+      <span class="c-spBtn-bar"></span>
+    </div>
+    <nav class="c-spNav" id="spNav">
+      <a href="/">
+        <img src="../assets/images/svg/logo_white.svg" alt="YUKA SHIGETA" class="c-spNav-logo">
+      </a>
+      <ul class="c-spNav-list">
+        <li class="c-spNav-item">
+          <a href="/about/" class="c-spNav-link">私について</a>
+        </li>
+        <li class="c-spNav-item">
+          <a href="/service/" class="c-spNav-link">サービス</a>
+        </li>
+        <li class="c-spNav-item">
+          <a href="/works/" class="c-spNav-link">制作実績</a>
+        </li>
+        <li class="c-spNav-item">
+          <a href="/c-contact/" class="c-spNav-link">コンタクト</a>
+        </li>
+        <li class="c-spNav-item">
+          <a href="https://www.instagram.com/yuka.shigeta.web/" class="c-spNav-link" target="_blank">
+            <img src="../assets/images/svg/logo_instagram_white.svg" alt="Instagram" class="c-spNav-instagram">
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <section class="c-under">
     <h1 class="c-under-title">制作実績</h1>
 
     <section class="p-works-category" id="web">
-      <p class="p-works-label">ディレクション</p>
-      <p class="p-works-label">ホームページ制作</p>
+      <div class="p-works-labelWrap">
+        <p class="p-works-label">ディレクション</p>
+        <p class="p-works-label">ホームページ制作</p>
+      </div>
       <ul class="c-worksList p-works-list">
         <li class="c-worksList-item">
           <a href="/works/web-mytera.html">
@@ -73,7 +102,9 @@
     </section>
 
     <section class="p-works-category" id="sns">
-      <p class="p-works-label">SNS運用代行</p>
+      <div class="p-works-labelWrap">
+        <p class="p-works-label">SNS運用代行</p>
+      </div>
       <ul class="c-worksList p-works-list">
         <li class="c-worksList-item">
           <a href="/works/sns-sayuri.html">
@@ -97,7 +128,9 @@
     </section>
 
     <section class="p-works-category" id="design">
-      <p class="p-works-label">デザイン制作</p>
+      <div class="p-works-labelWrap">
+        <p class="p-works-label">デザイン制作</p>
+      </div>
       <ul class="c-worksList p-works-list">
         <li class="c-worksList-item">
           <a href="/works/design-demo01.html">
@@ -112,7 +145,9 @@
     </section>
 
     <section class="p-works-category" id="pc">
-      <p class="p-works-label">PC業務サポート</p>
+      <div class="p-works-labelWrap">
+        <p class="p-works-label">PC業務サポート</p>
+      </div>
       <ul class="c-worksList p-works-list">
         <li class="c-worksList-item">
           <a href="/works/web-mytera.html">
@@ -164,5 +199,6 @@
       </nav>
     </div>
   </footer>
+  <script src="../assets/js/index.js"></script>
 </body>
 </html>
