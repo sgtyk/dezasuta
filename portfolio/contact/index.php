@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>英会話コーチ 橋本さゆり様 Instagram運用サポート | 制作実績 | YUKA SHIGETA | ホームページ制作・SNS運用代行</title>
+  <title>コンタクト | YUKA SHIGETA | ホームページ制作・SNS運用代行</title>
   <meta name="description" content="重田ゆかのポートフォリオサイトです。これまでの実績やサービスについて紹介しています。お気軽にお問いあわせください。">
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body class="p-worksDetail">
+<body class="p-contact">
   <header class="c-header">
     <a href="/">
       <img src="../assets/images/svg/logo.svg" alt="YUKA SHIGETA" class="c-header-logo">
@@ -38,7 +38,7 @@
     </div>
     <nav class="c-spNav" id="spNav">
       <a href="/">
-        <img src="../assets/images/svg/logo_white.svg" alt="YUKA SHIGETA" class="c-spNav-logo">
+        <img src="/assets/images/svg/logo_white.svg" alt="YUKA SHIGETA" class="c-spNav-logo">
       </a>
       <ul class="c-spNav-list">
         <li class="c-spNav-item">
@@ -62,57 +62,53 @@
     </nav>
   </header>
 
-  <section class="c-under p-worksDetail-inner">
-    <div class="p-worksDetail-titleWrapper">
-      <p class="c-under-title p-worksDetail-title">制作実績</p>
-      <p class="c-worksLabel p-worksDetail-label">SNS運用代行</p>
-      <h1>
-        <p class="p-worksDetail-name">英会話コーチ 橋本さゆり様</p>
-        <p class="p-worksDetail-work">Instagram運用サポート</p>
-      </h1>
-    </div>
-
-    <img src="../assets/images/works_img04@2x.png" alt="英会話コーチ 橋本さゆり様 Instagram運用サポート" class="p-worksDetail-img">
-
-    <a href="https://www.instagram.com/sayuri.english/" class="p-worksDetail-link" target="_blank">
-      Instagram
-      <img src="../assets/images/svg/works_link.svg" alt="リンクを開く" class="p-worksDetail-linkIcon">
-    </a>
-
-    <p class="p-worksDetail-text">
-      Instagramの今後の方向性に悩まれていたことからご相談頂き、競合のリサーチ、アカウントへの反映方法をサポートさせて頂きました。
-    </p>
-    <p class="p-worksDetail-text">
-      これまでは、リールの方向性が分からず、手が止まってしまうというさゆりさんでしたが、一緒にリールを作り上げ、4本目で再生回数1万回達成、伸び悩んでいたフォロワー数も2ヶ月で800人→1600人を超え、2倍を達成しました。
+  <section class="c-under">
+    <h1 class="c-under-title p-contact-title">コンタクト</h1>
+    <p class="p-contact-text">
+      ホームページ制作やデザイン作成について、<br>
+      質問やご相談をお受けしています。<br>
+      2営業日以内にご返信いたします。<br>
+      万が一返信がない場合は、<br class="pc-none">お手数ですがもう一度お問い合わせ<br class="pc-none">頂きますようお願いいたします。
     </p>
 
-    <dl class="p-worksDetail-list">
-      <div class="p-worksDetail-item">
-        <dt class="p-worksDetail-itemTitle">対応</dt>
-        <dd class="p-worksDetail-itemText">2023/10〜</dd>
+    <script type="text/javascript">var submitted = false;</script>
+    <form class="p-contact-form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdaROxW-Uh29qpEeEmyjzMFUhjl3o6qkMED5Xa7D45dFmoOKA/formResponse?embedded=true" method="post" enctype="application/x-www-form-urlencoded" onsubmit="submitted = true;" target="hidden_iframe">
+      <div class="p-contact-formItem">
+        <label for="name" class="p-contact-formLabel">
+          お名前
+          <span class="p-contact-formRequired">必須</span>
+        </label>
+        <input type="text" required id="name" name="entry.967146168" class="p-contact-formInput">
       </div>
-      <div class="p-worksDetail-item">
-        <dt class="p-worksDetail-itemTitle">担当</dt>
-        <dd class="p-worksDetail-itemText">SNS運用サポート</dd>
+
+      <div class="p-contact-formItem">
+        <label for="company" class="p-contact-formLabel">会社名</label>
+        <input type="text" id="company" name="entry.2032951155" class="p-contact-formInput">
       </div>
-    </dl>
 
-    <a href="/works/" class="c-btn">制作実績一覧に戻る</a>
-  </section>
-
-  <section class="c-contact" id="contact">
-    <h2 class="c-contact-title c-section-title">コンタクト</h2>
-    <p class="c-contact-text">
-      zoomにて無料相談受付中です。<br>
-      まずはお気軽にご連絡ください。
-    </p>
-    <a href="/contact/" class="c-contact-c-btn c-btn">無料で相談してみる</a>
+      <div class="p-contact-formItem">
+        <label for="mail" class="p-contact-formLabel">
+          メールアドレス
+          <span class="p-contact-formRequired">必須</span>
+        </label>
+        <input type="email" required id="mail" name="entry.843175598" class="p-contact-formInput">
+      </div>
+      <div class="p-contact-formItem">
+        <label for="content" class="p-contact-formLabel">
+          お問い合わせ内容
+          <span class="p-contact-formRequired">必須</span>
+        </label>
+        <textarea id="content" required cols="30" rows="10" name="entry.368047747" class="p-contact-formInput p-contact-formInput--textarea"></textarea>
+      </div>
+      <button type="submit" class="c-btn" name="submit">メッセージを送る</button>
+    </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='./complete.php';}"></iframe>
   </section>
 
   <footer class="c-footer">
     <div class="c-footer-inner">
       <a href="/">
-        <img src="../assets/images/svg/logo_white.svg" alt="YUKA SHIGETA" class="c-footer-logo">
+        <img src="/assets/images/svg/logo_white.svg" alt="YUKA SHIGETA" class="c-footer-logo">
       </a>
       <nav class="c-footerNav">
         <ul class="c-footerNav-list">
@@ -127,7 +123,7 @@
           </li>
           <li class="c-footerNav-item">
             <a href="https://www.instagram.com/yuka.shigeta.web/" class="c-footerNav-link" target="_blank">
-              <img src="../assets/images/svg/logo_instagram_white.svg" alt="Instagram" class="c-footerNav-instagram">
+              <img src="/assets/images/svg/logo_instagram_white.svg" alt="Instagram" class="c-footerNav-instagram">
             </a>
           </li>
         </ul>

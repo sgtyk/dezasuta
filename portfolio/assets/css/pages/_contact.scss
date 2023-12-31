@@ -2,6 +2,14 @@
  コンタクト
 ======================= */
 .p-contact {
+  .c-footer {
+    margin-top: 240px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 200px;
+    }
+  }
+
   &-title {
     margin-bottom: 50px;
 
@@ -21,11 +29,7 @@
 
   &-form {
     max-width: var(--content-width-sm);
-    margin: 80px auto 240px;
-
-    @media screen and (max-width: 767px) {
-      margin-bottom: 200px;
-    }
+    margin: 80px auto;
   }
 
   &-formItem {
@@ -61,6 +65,10 @@
     border-radius: 10px;
     color: var(--base-color);
     line-height: 1.7;
+
+    @media screen and (max-width: 767px) {
+      font-size: 1rem;
+    }
 
     &--textarea {
       height: 290px;
