@@ -7,6 +7,7 @@
   <meta name="description" content="重田ゆかのポートフォリオサイトです。ホームページ制作・SNS運用代行をしています。これまでの実績やサービスについて紹介しています。お気軽にお問いあわせください。">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="icon" href="/assets/images/svg/logo_icon.svg" type="image/svg+xml">
 </head>
 <body class="p-top">
   <div class="c-loading" id="loading">
@@ -251,9 +252,14 @@
   </footer>
   <script src="assets/js/index.js"></script>
   <script>
-    window.onload = function() {
+    function end_loader() {
       const loading = document.getElementById('loading');
       loading.classList.add('is-loaded');
+    }
+    window.onload = function() {
+      setTimeout(function() {
+        end_loader();
+      }, 1000)
     }
   </script>
 </body>

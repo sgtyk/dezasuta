@@ -140,20 +140,41 @@ body {
 
 .fadeIn{
   animation-name:fadeInAnime;
-  animation-duration:0.5s;
+  animation-duration: 1s;
   animation-fill-mode:forwards;
   opacity:0;
+}
+
+// .fadeIn-text{
+//   animation-name:fadeInAnime;
+//   animation-duration:0.5s;
+//   animation-delay: 1s;
+//   animation-fill-mode:forwards;
+//   opacity:0;
+// }
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
   }
 
-  @keyframes fadeInAnime{
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
+}
+
+@keyframes fadeInAnime-text {
+  from {
+    opacity: 0;
+    width: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    width: 255px;
+  }
+}
 
 // セクション
 .c-section {
